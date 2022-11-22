@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap');
+.fundo{
+  background: url(http://picsum.photos/600/1200/?blur) center no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudo{
+    background: #ffffffbb;
+    margin: 0 24px;
+    padding: 18px;
+    border-radius: 14px;
+    font-family: 'Kanit', sans-serif;
+  }

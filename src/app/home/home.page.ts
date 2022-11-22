@@ -10,21 +10,26 @@ export class HomePage {
 
   charada: string = '';
   respostaCharada: string = '';
-  constructor(private http: HttpClient) {}
+  respostaSecreta: string = '';
+  constructor(private http: HttpClient) { }
 
-  ngOnInit(){
+  ngOnInit() {
     this.solicitarCharada();
   }
 
-  revelar(){
 
-  }
-
-  solicitarCharada(){
+  solicitarCharada() {
     const url = "http://lucasreno.kinghost.net/charada";
-    this.http.get<any[]>(url).subscribe( response => {
+    this.http.get<any[]>(url).subscribe(response => {
       this.charada = response[0].pergunta;
-      this.respostaCharada = response[0].resposta;
+      this.respostaSecreta = response[0].resposta;
     });
   }
+
+
+  revelar() {
+    this.respostaCharada = this.respostaSecreta;
+  }
+
+
 }

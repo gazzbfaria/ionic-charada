@@ -1,13 +1,13 @@
-<div>
-  <div>
-      <div >{{charada}}</div>
-      <div >{{respostaCharada}}</div>
+<div class="fundo">
+  <div class="conteudo">
+      <div >{{charada}}</div> <br>
+      <div >{{respostaCharada}}</div> <br>
+      <ion-button (click)="revelar()">Revelar</ion-button>
   </div>
-</div>
- <ion-button (click)="revelar()">Revelar</ion-button>
 
-<ion-fab slot="fixed" vertical="bottom" horizontal="end">
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
   <ion-fab-button (click)="solicitarCharada()">
       <ion-icon name="refresh"></ion-icon>
   </ion-fab-button>
-</ion-fab>
+  </ion-fab>
+</div>
